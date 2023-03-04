@@ -7,7 +7,7 @@ selectedSet <- dietSet %>%
   select(Country, Meat, Confirmed, Deaths, Recovered)
 
 ui <- fluidPage(
-  titlePanel("Non-vegetarian Diet"),
+  titlePanel("Non-Vegetarian Diet"),
   tabsetPanel(
     tabPanel("Summary", 
              h1("Country Diet Data Set"),
@@ -19,7 +19,7 @@ ui <- fluidPage(
     tabPanel("Plot", 
              sidebarLayout(
                sidebarPanel(
-                 sliderInput("n", "Number of Recovery:",
+                 sliderInput("n", "Number of Data Points:",
                              min = 0,
                              max = 100,
                              value = 10),
